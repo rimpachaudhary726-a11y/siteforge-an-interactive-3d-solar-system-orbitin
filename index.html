@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Solar System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" onerror="document.getElementById('webgl-error').style.display='block';document.getElementById('webgl-error').textContent='Failed to load Three.js from CDN. Please check your internet connection.'"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/examples/js/controls/OrbitControls.js" onerror="console.warn('OrbitControls failed to load')"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="webgl-error" style="display:none;color:red;padding:2em;font-size:1.2em;text-align:center;">WebGL is not supported in your browser.</div>
+    <div class="overlay">
+        <h1>Interactive 3D Solar System</h1>
+        <p>Explore the planets of our solar system in an immersive 3D environment.</p>
+    </div>
+    <script src="scene.js" defer onerror="document.getElementById('webgl-error').style.display='block';document.getElementById('webgl-error').textContent='Failed to load scene.js'"></script>
+</body>
+</html>
